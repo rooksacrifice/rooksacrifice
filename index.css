@@ -1,0 +1,14 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Exo", Arial, sans-serif;
+  background-color: #557;
+  color: #fff;
+  display: grid;
+  grid-template-rows: min-content 1fr 1fr;
+  gap: 1rem;
+  align-content: start;
+  justify-content: center;
+  justify-items: center;
+  padding: 1rem;
+}
