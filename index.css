@@ -10,5 +10,6 @@ body {
   align-content: start;
   justify-content: center;
   justify-items: center;
+  place-items: center;
   padding: 1rem;
 }
