@@ -1,46 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>示例页面</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Webhook Test Form</title>
 </head>
 <body>
-    <h1>欢迎来到示例页面</h1>
-    <p>这是一个简单的HTML页面。</p>
-    
-    <h2>列表示例</h2>
-    <ul>
-        <li>列表项 1</li>
-        <li>列表项 2</li>
-        <li>列表项 3</li>
-    </ul>
+    <form id="webhookForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required><br><br>
+        
+        <button type="submit">Send to Webhook</button>
+    </form>
 
-    
-    <h2>链接示例</h2>
-    <a href="https://www.baidu.com">访问百度</a>
-    
-    <h2>表格示例</h2>
-    <table border="1">
-        <tr>
-            <th>表头 1</th>
-            <th>表头 2</th>
-            <th>表头 3</th>
-        </tr>
-        <tr>
-            <td>行 1, 列 1</td>
-            <td>行 1, 列 2</td>
-            <td>行 1, 列 3</td>
-        </tr>
-        <tr>
-            <td>行 2, 列 1</td>
-            <td>行 2, 列 2</td>
-            <td>行 2, 列 3</td>
-        </tr>
-    </table>
-    
-    <footer>
-        <p>版权所有 &copy; 2024 test</p>
-    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
