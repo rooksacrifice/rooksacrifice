@@ -9,7 +9,6 @@ document.getElementById('webhookForm').addEventListener('submit', function(event
   
     fetch('https://hooks.zapier.com/hooks/catch/18907417/24xgokx/', {
         method: 'GET',
-
         body: JSON.stringify(data)
     })
     .then(response => response.json())
