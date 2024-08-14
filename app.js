@@ -1,4 +1,5 @@
 document.getElementById('webhookForm').addEventListener('submit', function(event) {
+    event.preventDefault();
     var name = document.getElementById('name').value;
     var message = document.getElementById('message').value;
     var data = {
