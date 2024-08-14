@@ -1,7 +1,4 @@
 document.getElementById('webhookForm').addEventListener('submit', function(event) {
-    event.preventDefault(); 
-
-    
     var name = document.getElementById('name').value;
     var message = document.getElementById('message').value;
     var data = {
@@ -11,7 +8,7 @@ document.getElementById('webhookForm').addEventListener('submit', function(event
 
   
     fetch('https://hooks.zapier.com/hooks/catch/18907417/24xgokx/', {
-        method: 'POST',
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json'
         },
